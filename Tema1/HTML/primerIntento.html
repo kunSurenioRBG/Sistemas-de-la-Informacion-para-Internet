@@ -1,0 +1,118 @@
+<!DOCTYPE html> <!--IMPORTANTISIMO para que el navegador no se ejecute en modo de los navegadores antiguos-->
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Pagina</title>
+    <!--ESTO ES CSS-->
+    <!--el estilo declarado se aplica a la tabla, a th y td-->
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Aqui va todo el codigo de mi web. Importante utilizar SIEMPRE TAB/4 espacios para separar el contenido de las etiquetas-->
+
+    <!--TABLAS-->
+    <!--  <table style="border: 1px solid black;"> podria ir asi, si no declararamos style arriba en head -->
+    <table style="width: 600px;">
+        <thead> <!--agrupar varios elementos de cabeceras-->
+            <tr> <!--Table ROW-->
+                <!--etiquetas, cada una genera una COLUMN. Queremos cada columna con una etiqueta para organizarlas-->
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>DLC ELDEN RING OMG MIYAZAKI TE AMO</td>
+                <td>GRATIS con los chocokrispis</td>
+            </tr>
+            <tr>
+                <td>Chanchito Felis</td>
+                <td>33,33$</td>
+            </tr>
+            <tr>
+                <td>Juan la Cabra</td>
+                <td>145.50 Perros Sanchez</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <td></td>
+            <td>Total: 69,69$</td>
+        </tfoot>
+    </table>
+
+    <!--ul: LISTA No Ordenada-->
+    <!--ol: LISTA Ordenada-->
+    <ul>
+        <!--list item (elementos de la lista)-->
+        <li>No </li>
+        <li>Soy</li>
+        <li>Machista</li>
+        <li>Pero Si Hetero</li>
+        <li>
+            <ol>
+                <!--list item (elementos de la lista)-->
+                <li style="list-style-type: lower-roman;" value="50">Viva</li>
+                <li style="list-style-type: lower-roman;">Las</li>
+                <li style="list-style-type: lower-roman;">Verdunchis</li>
+            </ol>
+        </li>
+    </ul>
+
+    <!--FORMULARIOS-->
+    <!--con el for-id si pulso en nombre, el raton se pone directamente en el recuadro a rellenar-->
+    <!--action me permite enviar la informacion de abajo a un servidor por ejemplo-->
+    <!--GET: envia info (se ve en la URL) MAX 255 caracteres)
+        POST: envia los datos (NO se ve en la URL)-->
+    <form action="/HTML/" method="get">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre de chanchito...">
+        <br>
+        <label for="apellido">Apellido</label>
+        <input value="feliz" type="text" id="apellido" name="apellido" placeholder="Apellido de chanchito...">
+        <!--value es un valor por defecto ya introducido-->
+        <br>
+        <label for="comentario">Comentario</label>
+        <br>
+        <textarea name="comentario" id="comentario" placeholder="Ingrese comentario grasioso" cols="30"
+            rows="10">este es un valor por defecto</textarea>
+        <br>
+        <button type="button"> <img src="https://i.imgur.com/ow2vdzk.png"
+                width="60"> <br> Tipo boton</button>
+        <button type="reset"> <img src="https://pbs.twimg.com/profile_images/1697340799359311872/0yHrQ0nk_400x400.jpg" width="60"> <br> Tipo reset</button>
+        <button type="submit"> <img src="https://i.imgur.com/Xr0DNKt.png" width="60"> <br>Tipo submit</button>
+    </form>
+
+    <h1>Mi primer heading check</h1> <!--etiqueta de encabezado-->
+    <h2>Mi segundo heading boom</h2>
+    <h3>Mi tercer heading kevin</h3>
+
+    <p>Hola chanchito feliz que esta muy feliz</p> <!--parrafo para los textos-->
+    <hr> <!--linea de separacion-->
+    <h2>Estado actual chanchito :\</h2>
+    <p>chanchito triste esta <span style="color: blueviolet">muy triste</span>. Pobrecito joeee, no tiene <br> la culpa.
+    </p> <!--br para saltos de linea-->
+    <a href="https://pbs.twimg.com/media/GG9qmmpXgAAUCnZ?format=jpg&name=900x900">Ir a Google para hacerlo feliz</a>
+    <br>
+    <a target="_blank" href="https://twitter.com/i/status/1760664788206825799">Ir a Google para hacerlo feliz (nueva
+        pestaña)</a> <!--_blank para pestaña nueva-->
+
+    <p>Imagen de un fan de chanchito:</p>
+    <img src="https://pbs.twimg.com/media/GG_fYH1W0AAU3z8?format=jpg&name=large"> <!--URL-->
+    <br>
+    <img src="img/chanchito_fortnite.png" width="800"> <!--imagen local-->
+    <img src="https://i.imgur.com/igEQHa3.png" width="800">
+
+</body>
+
+</html>

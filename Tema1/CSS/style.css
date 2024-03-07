@@ -1,0 +1,144 @@
+/*Para aplicar distintos atributos a distintos selectores sin mezclarlos*/
+/*1 forma: por el id*/
+#titulo {
+    color: tomato;
+}
+
+/*2 forma: por su nombre propio de etiqueta
+#titulo{
+    color: tomato;
+}
+*/
+
+/*---------------------------------------------------------*/
+
+p {
+    color: blueviolet;
+}
+
+/* esta es para aplicar los atributos a todas las etiquetas con la misma clase
+.texto{
+    color: blueviolet;
+} 
+*/
+
+/*
+esta para diferenciar entre distintas etiquetas
+EL ORDEN DE LAS INSTRUCCIONES (de ultima >>> principio) EN CSS IMPORTA!!!!
+*/
+p.texto {
+    color: burlywood;
+}
+
+p.especial {
+    color: greenyellow;
+}
+
+div p {
+    color: aquamarine;
+}
+
+div h2,
+h3 {
+    color: brown;
+}
+
+/* 
+Selector universal
+NOTA: solo aplica las propiedades que no se han aplicado previamente (black no se aplica)
+*/
+* {
+    font-size: 24px;
+    /* color: black; */
+}
+
+/*------------------------------------------------------------*/
+/*
+.color{
+    color: #00F;
+}
+
+*/
+.colorChungo {
+    color: rgb(0, 255, 255);
+}
+
+
+.color {
+    /* border: 5px black dotted; */
+    /*
+    dotted
+    dashed
+    solid
+    double
+    groove  tridimensional
+    ridge   tridimensional
+    inset   tridimensional
+    outset  tridimensional
+    none
+    hidden
+    */
+
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+/*----------------------------------------------------*/
+/* BackGround */
+
+#fondo {
+    background-color: magenta;
+    /* opacity: 0.4; */
+    height: 310px;
+    width: 190px;
+    background-image: url('venduch.png');
+    /* contiene la imagen dentro de la resolucion */
+    background-size: 200px 300px;
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-x;  repite en ejeX*/
+
+}
+
+/* 
+.fondo{  (class = fondo)
+    background-color: magenta;
+} */
+
+.margen {
+    background-color: chocolate;
+    margin: 10px 25px 30px 35px;
+    padding: 30px 25px 20px 15px;
+    border-right: solid 20px blueviolet;
+    height: 100px;
+    width: 70px;
+    /*barras para deslizar elemento*/
+    overflow: scroll;
+    outline: 2px solid red;
+}
+
+#texto{
+    text-align: center;
+    /* mover derecha, sombra hacia abajo, blur, color */
+    text-shadow: 3px 4px 4px gray; 
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+
+    /* sans-serif en caso de que la primera fuente no se importe */
+    font-family: 'Montserrat', sans-serif;
+}
+ /* : para indicar el estado del link. EN ESTE ORDEN IMPORTANTE*/
+ a:link{
+    color: palevioletred;
+ }
+ a:visited{
+    color: gray;
+ }
+
+ a:hover{
+    color: yellow;
+ }
+
+ a:active{
+    color: red;
+ }
