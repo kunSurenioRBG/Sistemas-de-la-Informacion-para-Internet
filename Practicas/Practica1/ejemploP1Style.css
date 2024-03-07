@@ -1,0 +1,59 @@
+#Texto{
+    margin-left: 500px;
+    color: rgb(0, 0, 144);
+}
+
+#Letras {
+    /* margen exterior*/
+    padding-bottom: 30px;
+    padding-top: 20px;
+    /* margen interior*/
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Oswall', sans-serif;
+}
+
+#Titulo {
+    padding-top: 40px;
+    text-shadow: 3px 4px 4px rgb(86, 151, 255);
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Fondo {
+    background-color: #98d3f5;
+    padding-bottom: 50px;
+}
+
+.enlace {
+    font-family: 'Oswall', sans-serif;
+    color: rgb(179, 0, 0);
+    font-weight: bold;
+
+    list-style: none; /*para quitar elementos de ordenacion*/
+
+    background-color: white;
+    
+    margin-top: 5px;
+    margin-left: 200px;
+
+    width: 100px;
+    height: 5px;
+    
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+    padding-left: 10px;
+    border-right: solid 20px black;
+}
+
+ul{
+    padding-top: 100px;
+}
+
+#Menu{
+    position: absolute;
+    /* position: sticky (se pega el horizontal arriba del todo) */
+}
