@@ -29,7 +29,7 @@
 
 .enlace {
     font-family: 'Oswall', sans-serif;
-    color: rgb(179, 0, 0);
+    /* color: rgb(179, 0, 0); */
     font-weight: bold;
 
     list-style: none; /*para quitar elementos de ordenacion*/
@@ -56,4 +56,9 @@ ul{
 #Menu{
     position: absolute;
     /* position: sticky (se pega el horizontal arriba del todo) */
+}
+
+a{
+    text-decoration: none;
+    color: rgb(179, 0, 0);
 }
