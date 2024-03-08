@@ -1,0 +1,47 @@
+body {
+    font-family: sans-serif;
+    font-size: 10pt;
+}
+
+#tabla {
+    margin-top: 20px;
+    text-align: right;
+    width: 100%;
+    border: 1px black solid;
+    border-collapse: collapse;
+}
+
+#titulo {
+    color: darkblue;
+    text-align: center;
+}
+
+#encabezados {
+    text-align: center;
+    background-color: rgb(202, 237, 251);
+    border: 1px black solid;
+}
+
+tr:nth-child(even){
+    background-color: rgb(242,242,242);
+}
+
+tr:nth-child(odd) td:first-child {
+    background-color: rgb(218,242,208);
+}
+
+tr:nth-child(even) td:first-child {
+    background-color: rgb(181,230,162);
+}
+
+td, th{
+    border-right: 1px black solid;
+    padding: 8px;
+}
+tr td:first-child{
+    text-align: left;
+}
+
+#proyectoTitulo {
+    background-color: rgb(142, 217, 115);
+}
